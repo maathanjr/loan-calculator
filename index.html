@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Loan Calculator</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Loan Calculator</h1>
+    <div class="input-container">
+      <label for="loan-amount">Loan Amount ($):</label>
+      <input type="number" id="loan-amount" placeholder="Enter loan amount">
+    </div>
+    <div class="input-container">
+      <label for="interest-rate">Annual Interest Rate (%):</label>
+      <input type="number" id="interest-rate" step="0.01" placeholder="Enter interest rate">
+    </div>
+    <div class="input-container">
+      <label for="years">Years to Repay:</label>
+      <input type="number" id="years" placeholder="Enter number of years">
+    </div>
+    <button id="calculate">Calculate</button>
+    <div id="results" class="hidden">
+      <h2>Results:</h2>
+      <p>Monthly Payment:₹<span id="monthly-payment"></span></p>
+      <p>Total Payment: ₹<span id="total-payment"></span></p>
+      <p>Total Interest: ₹<span id="total-interest"></span></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
